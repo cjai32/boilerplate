@@ -1,0 +1,427 @@
+///////////////////
+// Media Queries //
+///////////////////
+@import 'variables';
+@import 'modules/vars';
+// Retina query (remove when not needed)
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+}
+
+// Largest devices
+@media (max-width: $screen-lg) {
+
+}
+
+// Large devices
+@media (max-width: $screen-md) {
+
+}
+@media (max-width: $screen-extra){
+    header.fixed .bottom-row {
+        padding: 0; 
+    }
+    .carousel{
+        display:flex;
+        justify-content: center;
+        background-color: $dark;
+        
+    .carousel_contents{
+         
+        width: 100%;
+        height: 480px;
+        background: url(../img/tablet-carousel.png) no-repeat;
+        margin: 0;
+        text-align: center;
+    }
+}
+}
+
+// Medium devices
+@media (max-width: $screen-sm) {
+    .about-page-container .about-page-container_lorem {
+        width: 45%;
+   
+    }
+    .align-right {
+        
+        width: 60%;
+    }
+    header.fixed .bottom-row {
+        padding: 0;
+        ; 
+    }
+    .carousel{
+      
+        .carousel_contents{
+            img{
+                margin: 0 auto;
+                padding-bottom: 30px;
+            }
+            .right-contents{
+                color: $fair;
+                margin: 0;
+                font-weight: 600;
+                width: 85%;
+                margin-left: 3rem;
+                .vote-alex{
+                  
+                    font-size:36px;
+                    font-weight: 700;
+                }
+                .as-laugh-fa{
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+                .funniest-person{
+                    font-size:24px;
+                    font-weight:700;
+                    color:$fair;
+                }
+    
+                a{
+                    text-decoration: none;
+                    color:$orange;
+                    font-weight: 600;
+                }
+
+                p{
+                    font-size:18px;
+                    
+                }
+    
+                .fa-play-circle:before ,.fa-heart,.fa-share-alt{
+                    font-size: 16px;
+                    color:$yellow;
+                  }
+            }
+    
+        }
+    
+       
+    }
+
+    //about
+    .tablet-img{
+            
+        background: url(../img/tablet-about.png) no-repeat;
+        height:600px;
+    }
+    .container-about-alex{
+        background: url("");
+       
+        height: 30rem;;
+        
+        background-size: cover;
+        text-align: center;
+       
+        .container-about-alex__about-alex-txt{
+            max-width:35rem;
+            margin-left:8rem;
+            padding-top: 3rem;
+            text-align: center;
+    
+            .fa-stack{
+                color:$yellow;
+            }
+    
+            .container-about-alex_about-alex-txt--width-change{
+                padding: 0 60px 0 60px;
+            }
+        }
+    }
+    //videos
+
+    .video-container {
+        background-color:#910000;
+        color:$fair;
+        padding: 0;
+        
+        h2{
+            margin-top: 0;
+            padding: 20px;
+        }
+    
+        p{
+            font-size: 14px;
+        }
+        .lslide{
+            margin-right: 100px;
+        }
+
+        .lSSlideOuter .lSPager.lSpg {
+            margin: 10px 10px 0;
+            padding: 0;
+            text-align: right;
+        }
+
+    }
+
+}
+
+// Small devices
+@media (max-width: $screen-xs) {
+    .social-links {
+        margin-right: fluidity(20px, $small-container);
+    
+    
+        ul {
+          
+    
+            li {
+               
+                margin: 12.5px 0 12.5px 5px;
+            
+                a {
+                    text-decoration: none;
+                    text-indent: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    
+                }
+    
+            }
+        }
+    }
+    .carousel{
+      
+        .carousel_contents{
+         
+            width: 100%;
+            height: 480px;
+            background: url(../img/tablet-carousel.png) no-repeat;
+            margin: 0;
+            text-align: center;
+            
+
+
+            img{
+                margin: 0 auto;
+                padding-bottom: 10px;
+            }
+            .right-contents{
+                color: $fair;
+                margin: 0;
+                font-weight: 600;
+                width: 85%;
+                margin-left: 3rem;
+                .vote-alex{
+                  
+                    font-size:26px;
+                    font-weight: 700;
+                }
+                .as-laugh-fa{
+                    font-size: 22px;
+                    font-weight: 600;
+                }
+                .funniest-person{
+                    font-size:22px;
+                    font-weight:700;
+                    color:$fair;
+                }
+    
+                a{
+                    text-decoration: none;
+                    color:$orange;
+                    font-weight: 600;
+                }
+
+                p{
+                    font-size:18px;
+                    
+                }
+    
+                .fa-play-circle:before ,.fa-heart,.fa-share-alt{
+                    font-size: 16px;
+                    color:$yellow;
+                  }
+            }
+    
+        }
+    
+       
+    }
+    .tablet-img{
+        
+        background-size:100% 100%;
+        height:485px;
+        
+    }
+    .container-about-alex{
+        background: url("");
+       
+        height: 30rem;;
+        
+        background-size: cover;
+        text-align: center;
+       
+        .container-about-alex__about-alex-txt{
+            max-width:35rem;
+            margin-left:0;
+            padding-top: 3rem;
+            text-align: center;
+    
+            .fa-stack{
+                color:$yellow;
+            }
+    
+            .container-about-alex_about-alex-txt--width-change{
+                padding: 0 60px 0 60px;
+            }
+        }
+    }
+}
+
+//extra small
+@media (max-width: $screen-xxs) {
+ .social-links-span{
+     display: none;
+ }
+
+ .carousel{
+    display:flex;
+    justify-content: center;
+    background-color: $dark;
+    
+    .carousel_contents{
+     
+        width: 100%;
+        height: 565px;
+        background: url(../img/320mobile.png) no-repeat;
+        margin: 0;
+        text-align: center;
+        
+
+        .align-right{
+            float: none;
+            width:100%;
+        }
+
+        img{
+            margin: 0 auto;
+            padding-bottom: 10px;
+            width:100px;
+        }
+        .right-contents{
+            color: $fair;
+            margin: 0 auto;
+            font-weight: 600;
+          
+            
+            
+            .vote-alex{
+              
+                font-size:24px;
+                font-weight: 700;
+            }
+            .as-laugh-fa{
+                font-size: 1rem;
+                font-weight: 600;
+            }
+            .funniest-person{
+                font-size:18px;
+                font-weight:700;
+                color:$fair;
+            }
+
+            a{
+                text-decoration: none;
+                color:$orange;
+                font-weight: 600;
+            }
+
+            p{
+                font-size:18px;
+                margin:0;
+
+               
+                
+            }
+            
+
+            .fa-play-circle:before ,.fa-heart,.fa-share-alt{
+                font-size: 16px;
+                color:$yellow;
+              }
+        }
+
+    }
+
+   
+}
+.tablet-img{
+    margin-top:15%;
+    background-size:100% 100%;
+    height:250px;
+    
+}
+.container-about-alex{
+    background: url("");
+   
+    height: 30rem;;
+    
+    background-size: cover;
+    text-align: center;
+   
+    .container-about-alex__about-alex-txt{
+        max-width:35rem;
+        margin-left:0;
+        padding-top: 3rem;
+        text-align: center;
+        font-size:14px;
+        padding: 0 5px 0 5px;
+
+        .fa-stack{
+            color:$yellow;
+        }
+
+        .container-about-alex_about-alex-txt--width-change{
+            padding: 0 60px 0 60px;
+        }
+    }
+}
+
+.video-container {
+    background-color:#910000;
+    color:$fair;
+    padding: 0;
+    position: relative;
+
+    
+    
+    h2{
+        margin-top: 0;
+        padding: 20px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+    .lslide{
+        width: 300px !important;
+    }
+
+    .lSSlideOuter .lSPager.lSpg {
+        margin: 10px 10px 0;
+        padding: 0;
+        text-align: right;
+    }
+
+}
+
+.copyright {
+    p {
+        line-height: 20px !important;
+        padding: 10px 0 10px 0;
+        .galing{
+            font-weight: 600;
+        }
+    }
+
+  
+}
+
+
+}
+ 
+

@@ -1,0 +1,63 @@
+footer {
+    width: 100%;
+    padding-bottom: 0px !important;
+    @include clearfix();
+
+    a {
+    	padding: 0 10px;
+		color: #444;
+		text-decoration: none;
+    }
+    
+    .left-pane {
+        margin: 45px 0;
+        
+    }
+
+
+    .footer-branding {
+        background: url(../img/footer-branding.png) 0 0 no-repeat;
+        @include clearfix();
+
+        .align-left {
+            width: fluidity(340px, $desktop);
+        }
+
+        .align-right {
+            width: fluidity(940px, $desktop);   
+        }
+    }
+
+    .contact {
+        margin-top: 35px;
+        width: 49%;
+
+        p {
+            margin: 0;
+            @include use-font($museo-sans, $px12, normal, 500);
+            line-height: 21px;
+        }
+    }
+
+    .copyright {
+        padding: 0 fluidity(20px, $desktop);
+        background-color: $yellow;
+        color: $fair;
+        @include clearfix();
+
+        p {
+            margin: 0;
+            @include use-font($museo-sans, $px12, normal, 300);
+            text-align: center;
+            line-height: 50px;
+            color:$orange;
+            font-weight: 400;
+
+            .galing{
+                font-weight: 600;
+            }
+        }
+
+      
+    }
+}

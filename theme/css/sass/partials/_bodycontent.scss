@@ -1,0 +1,161 @@
+.carousel{
+    display:flex;
+    justify-content: center;
+    background-color: $dark;
+    
+    .carousel_contents{
+     
+        width: 100%;
+        height: 480px;
+        background: url(../img/carousel1.png) no-repeat;
+        margin: 0 20vh 0 20vh;
+        text-align: center;
+
+        img{
+            margin: 0 auto;
+            padding-bottom: 30px;
+        }
+        .right-contents{
+            color: $fair;
+            margin: 5% 10rem 0 0;
+            font-weight: 600;
+            .vote-alex{
+              
+                font-size:36px;
+                font-weight: 700;
+            }
+            .as-laugh-fa{
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .funniest-person{
+                font-size:28px;
+                font-weight:700;
+                color:$orange;
+            }
+
+            a{
+                text-decoration: none;
+                color:$orange;
+                font-weight: 600;
+            }
+
+            .fa-play-circle:before ,.fa-heart,.fa-share-alt{
+                font-size: 16px;
+                color:$yellow;
+              }
+        }
+
+    }
+
+   
+}
+
+.container-about-alex{
+    background: url(../img/bodyimg.png);
+   
+    height: 30rem;;
+    
+    background-size: cover;
+    text-align: center;
+
+    .container-about-alex__about-alex-txt{
+        max-width:35rem;
+        margin-left:8rem;
+        padding-top: 3rem;
+        text-align: center;
+
+        .fa-stack{
+            color:$yellow;
+        }
+
+        .container-about-alex_about-alex-txt--width-change{
+            padding: 0 60px 0 60px;
+        }
+    }
+}
+
+.fa-stack-1x {
+    color:white;
+}
+.icon-facebook {
+   color:#3b5998;
+}
+
+.icon-twitter {
+    color:#00aced;
+}
+
+.icon-gplus{
+    color:#dd4b39;
+}
+
+.video-container {
+    background-color:#910000;
+    color:$fair;
+    padding: 1rem 15rem 0 15rem;
+
+
+    p{
+        font-size: 14px;
+        padding-left: 10px;
+        font-weight: 600;
+    }
+    ul{
+        list-style: none outside none;
+        padding-left: 0;
+        margin: 0;
+    }
+    .demo .item{
+   padding-bottom: 30px;
+    }
+    .content-slider li{
+        margin-right:20px;
+
+        .fa-play-circle{
+            margin-top:80px;
+        }
+    }
+    .content-slider a {
+         margin: 0;
+         margin: 10px;
+        
+        height: 210px;
+        line-height: 155px; /* match height */
+        color: #FFF;    
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        border: 1px solid #000;
+        display: block;
+    }
+    .demo{
+      
+        margin: 0 auto;
+    }
+}
+
+
+
+//about page
+
+.about-page-container{
+    background: url(../img/about-bg.png);
+    height: 100%;;
+    background-size: cover;
+    text-align: center;
+    color: $fair;
+    font-weight: 600;
+    
+    
+   img{
+       padding-top: 50px;
+       height:30rem;
+       margin: 0 auto;
+   }
+   .about-page-container_lorem{
+       width: 20%;
+       margin: 0 auto;
+       padding: 50px 0 100px 0;
+   }
+}
